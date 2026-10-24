@@ -1,0 +1,6 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { --bg: 246 247 249; --panel: 255 255 255; --line: 224 228 233; --ink: 20 23 28; --mute: 101 112 128; --accent: 15 118 110; --ok: 22 138 98; --warn: 180 110 10; --bad: 200 50 50; --info: 37 99 200; }
+.dark { --bg: 14 16 19; --panel: 21 24 29; --line: 38 43 52; --ink: 230 233 238; --mute: 138 147 161; --accent: 94 234 212; --ok: 63 182 139; --warn: 232 168 56; --bad: 239 91 91; --info: 110 168 254; }
+body { @apply bg-bg text-ink antialiased; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+.mono { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 0.8125rem; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
